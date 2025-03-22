@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body {
+    height: 100%;
+    width: 100%;
+}
+.parent{
+    height: 100vh;
+    background-color: thistle;
+    /* grid-template-columns: 300px 200px auto 400px;  */
+    grid-template-columns: repeat(3,auto);
+    grid-template-rows: repeat(2,auto);
+    display: grid;
+}
+.ch1,.ch2,.ch3,.ch4,.ch5,.ch6{
+    background-color: rgb(59, 119, 135);
+    border: 1px solid black;
+}
+.ch1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
